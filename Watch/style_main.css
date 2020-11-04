@@ -151,7 +151,8 @@ h3 {
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 1.5s;
 }
 
 .link {
@@ -160,6 +161,17 @@ h3 {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }
 
 .playstationLink {
@@ -241,12 +253,12 @@ h3 {
     .viewingDeck {
         padding: 0px;
         text-align: center;
-        overflow: hidden;
         display: block;
     }
 
     .films {
         display: block;
+        overflow: hidden;
     }
 
     .juliaBiel {
@@ -260,6 +272,66 @@ h3 {
     .link {
         width: 400px;
         height: 210px;
+    }
+
+    .modalBackdrop {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (min-width: 40.1rem) and (max-width: 64rem) {
+    body {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main_header {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero_logo { 
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .main_nav {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+
+    .viewingDeck {
+        padding: 0px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .thumbnail {
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .films {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    .juliaBiel {
+        margin: 0px;
+    }
+
+    .longTitle {
+        letter-spacing: 0px;
+    }
+
+    .film3M {
+        margin: 0px;
+    }
+
+    .link {
+        width: 90vw;
+        height: 45vh;
     }
 
     .modalBackdrop {
