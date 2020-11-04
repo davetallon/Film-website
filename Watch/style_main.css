@@ -256,4 +256,13 @@ h3 {
     .film3M {
         margin: 0px;
     }
+
+    .link {
+        width: 400px;
+        height: 210px;
+    }
+
+    .modalBackdrop {
+        background: rgba(0, 0, 0, 0.7);
+    }
 }
