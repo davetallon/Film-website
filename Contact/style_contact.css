@@ -85,3 +85,34 @@ header > div {
     letter-spacing: 4px;
 
 }
+
+@media (max-width: 40rem) {
+    body {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main_header {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero_logo { 
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .main_nav {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+
+    .personalContact {
+        padding: 0px;
+    }
+
+    .contactSection {
+        padding-top: 5rem;
+    }
+}
