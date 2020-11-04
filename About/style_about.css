@@ -109,3 +109,44 @@ header > div {
     text-indent: 2px;
     line-height: 1.8;
 }
+
+@media (max-width: 40rem) {
+    body {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main_header {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero_logo { 
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .main_nav {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+
+    .bioImg {
+        width: 83vw;
+        height: 40vh;
+    }
+
+    .bioSpace {
+        display: block;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    .bioTxt {
+        letter-spacing: 3px;
+        padding: unset;
+        width: auto;
+        padding-top: 1.5rem;
+    }
+}
