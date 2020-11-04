@@ -1,0 +1,111 @@
+body {
+    margin: 0px;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+@font-face {
+    font-family: "GillSans";
+    src: url("../Fonts/GillSans.ttc") format("truetype");
+    font-style: normal;
+}
+
+.main_header {
+    width: 100%;
+}
+
+header > div {
+    display: inline-block;
+} 
+
+.hero_logo { 
+    font-family: "GillSans";
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 4px;
+}
+
+.main_nav {
+    padding-left: 20rem;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    letter-spacing: 4px;
+}
+
+.main_nav a:hover,
+.main_nav a:active {
+    color: darkgray;
+}
+
+.main_nav_items {  
+    margin: 0px;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_item {
+    font-family: 'GillSans';
+    display: inline-block;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: black;
+}
+
+.bioSpace {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    display: inline-block;
+}
+
+.bioImg {
+    background: url(../Images/Me.JPG);
+    background-size: 100%;
+    background-position: 0% 60%;
+    display: inline-block;
+    /* background-position:  */
+    width: 500px;
+    height: 500px;
+}
+
+.bioImg:hover,
+.bioImg:active {
+    filter: grayscale();
+}
+
+.bioTxt {
+    display: inline-block;
+    margin: 0px;
+    width: calc(100% - 600px);
+    vertical-align: top;
+    padding: 8px 0px 8px 64px;
+    font-family: 'GillSans';
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1rem;
+    text-indent: 2px;
+    line-height: 1.8;
+    letter-spacing: 4px;
+}
+
+.awardsList {
+    display: inline-block;
+    margin: 0px;
+    /* vertical-align: top; */
+    padding: 8px 0px 8px 32px;
+    font-family: 'GillSans';
+    text-align: justify;
+    font-size: 1rem;
+    text-indent: 2px;
+    line-height: 1.8;
+}
