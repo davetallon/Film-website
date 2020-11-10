@@ -1,0 +1,340 @@
+body {
+    margin: 0px;
+    padding-top: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+@font-face {
+    font-family: "GillSans";
+    src: url("../Fonts/GillSans.ttc") format("truetype");
+    font-style: normal;
+}
+
+.main_header {
+    width: 100vw;
+    height: 20vh;
+}
+
+header > div {
+    display: inline-block;
+} 
+
+.hero_logo { 
+    font-family: "GillSans";
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 4px;
+}
+
+.main_nav {
+    padding-left: 20rem;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    letter-spacing: 4px;
+}
+
+.main_nav a:hover,
+.main_nav a:active {
+    color: darkgray;
+}
+
+.main_nav_items {  
+    margin: 0px;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_item {
+    font-family: 'GillSans';
+    display: inline-block;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: black;
+}
+
+.viewingDeck {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    display: inline-block;
+}
+
+h3 {
+    font-family: 'GillSans';
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.films {
+    display: inline-block;
+
+}
+
+.thumbnail {
+    /* background-size: 30%; (widthpx & heightpx) */
+    width: 380px;
+    height: 380px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;  
+}
+
+.thumbnail:hover,
+.thumbnail:active {
+    filter: sepia(50%);
+}
+
+.playstation {
+    /* background: url(https://drive.google.com/uc?id=1UoE5n85vqbbt9wg1JjOFO6PSF3BiMHFK&export=download); */
+    background: url(../Images/playstation.jpg);
+    background-size: 225%;
+    background-position: 30%;
+    /* margin: 0px 16px 0px 0px; */
+}
+
+/* IDEA!! I could impliment a film-reel animation using background-size: 100% and a rolling Y-axis */
+
+
+.film3M {
+    background: url(../Images/3M.jpg);
+    background-size: 240%;
+    background-position: 35%;
+    margin: 0px 48px 0px 48px;
+}
+
+.propertyFinder {
+    background: url(../Images/PropertyFinder.jpg);
+    background-size: 175%;
+    background-position: 45% 35%;
+    /* margin: 0px 0px 0px 16px; */
+}
+
+.sungod {
+    background: url(../Images/Sungod.jpg);
+    background-size: 185%;
+    background-position: 45% 25%;
+    /* margin: 0px 16px 0px 0px; */
+}
+
+.juliaBiel {
+    background: url(../Images/JuliaBiel.jpg);
+    background-size: 190%;
+    background-position: 50% 60%;
+    margin: 0px 48px 0px 48px;
+}
+
+.cesar {
+    background: url(../Images/Cesar.jpg);
+    background-size: 200%;
+    background-position: 25% 25%;
+    /* margin: 0px 0px 0px 16px; */
+}
+
+
+.modalBackdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 1.5s;
+}
+
+.link {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.playstationLink {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.link3M {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.propertyFinderLink {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.sungodLink {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.juliaBielLink {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.cesarLink {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+@media (max-width: 40rem) {
+    body {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main_header {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero_logo { 
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .main_nav {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+
+    .viewingDeck {
+        padding: 0px;
+        text-align: center;
+        display: block;
+    }
+
+    .films {
+        display: block;
+        overflow: hidden;
+    }
+
+    .juliaBiel {
+        margin: 0px;
+    }
+
+    .film3M {
+        margin: 0px;
+    }
+
+    .link {
+        width: 400px;
+        height: 210px;
+    }
+
+    .modalBackdrop {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (min-width: 40.1rem) and (max-width: 64rem) {
+    body {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main_header {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero_logo { 
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .main_nav {
+        padding-left: 0px;
+        letter-spacing: 2px;
+    }
+
+    .viewingDeck {
+        padding: 0px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .thumbnail {
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .films {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    .juliaBiel {
+        margin: 0px;
+    }
+
+    .longTitle {
+        letter-spacing: 0px;
+    }
+
+    .film3M {
+        margin: 0px;
+    }
+
+    .link {
+        width: 90vw;
+        height: 45vh;
+    }
+
+    .modalBackdrop {
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
