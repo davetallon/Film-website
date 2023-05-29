@@ -103,9 +103,7 @@ function reset() {
 $(document).ready(function() {
 
   if(window.location.href.indexOf('#PlayStation') != -1) {
-    filmPlaystation.style.display = 'inline-block';
-    player = new Vimeo.Player('vimeoPS');
-    modal.style.display = 'block';
+    thumbPlaystation.click();
   }
 
 });
