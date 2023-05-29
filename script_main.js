@@ -18,8 +18,6 @@ const thumbnails = document.querySelectorAll('.thumbnail');
 
 
 let player = new Vimeo.Player('vimeoPS');
-
-
 loadEventListeners();
 
 
@@ -77,6 +75,11 @@ if (modal) {
     });
 }
 
+//This is used for URL embedding, so that the PS modal is loaded upon click on embedded URL   (e.g. embed the following in a PDF hyperlink: https://davidtallonfilm.com/#PlayStation )
+if(window.location.href.indexOf('#PlayStation') != -1) {
+    thumbPlaystation.click();
+  }
+
 
 function reset() {
     if (filmPlaystation) {
@@ -98,10 +101,3 @@ function reset() {
         filmCesar.style.display = 'none';
     }
 }
-
-//This is used for URL embedding, so that the PS modal is loaded upon click on embedded URL   (e.g. embed the following in a PDF hyperlink: https://davidtallonfilm.com/#PlayStation )
-
-  if(window.location.href.indexOf('#PlayStation') != -1) {
-    thumbPlaystation.click();
-  }
-});
