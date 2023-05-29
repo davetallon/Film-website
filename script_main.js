@@ -100,10 +100,8 @@ function reset() {
 }
 
 //This is used for URL embedding, so that the PS modal is loaded upon click on embedded URL   (e.g. embed the following in a PDF hyperlink: https://davidtallonfilm.com/#PlayStation )
-$(document).ready(function() {
 
   if(window.location.href.indexOf('#PlayStation') != -1) {
     thumbPlaystation.click();
   }
-
 });
