@@ -98,3 +98,13 @@ function reset() {
         filmCesar.style.display = 'none';
     }
 }
+
+//This is used for URL embedding, so that the PS modal is loaded upon click on embedded URL   (e.g. embed the following in a PDF hyperlink: https://davidtallonfilm.com/#PlayStation )
+$(document).ready(function() {
+
+  if(window.location.href.indexOf('#PlayStation') != -1) {
+    filmPlaystation.style.display = 'inline-block';
+    player = new Vimeo.Player('vimeoPS');;
+  }
+
+});
