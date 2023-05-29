@@ -103,6 +103,7 @@ function reset() {
 $(document).ready(function() {
 
   if(window.location.href.indexOf('#PlayStation') != -1) {
+    modal.style.display = 'block';
     filmPlaystation.style.display = 'inline-block';
     player = new Vimeo.Player('vimeoPS');;
   }
